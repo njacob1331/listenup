@@ -1,0 +1,15 @@
+[package]
+name = "audio-unit"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+cpal = "*"
+tokio = {version = "*", features=["sync"]}
+ringbuf = "*"
+crossbeam-channel = "0.5.15"
+
+gpui = { git = "https://github.com/zed-industries/zed", package = "gpui" }
+ui   = { git = "https://github.com/zed-industries/zed", package = "ui" }
+theme   = { git = "https://github.com/zed-industries/zed", package = "theme" }
+settings  = { git = "https://github.com/zed-industries/zed", package = "settings" }
